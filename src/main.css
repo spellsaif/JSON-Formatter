@@ -1,0 +1,52 @@
+body {
+    margin:0;
+    font-family: monospace;
+    background: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+.text-area{
+    height: 100%;
+    resize: none;
+    font-size: 16px;
+    padding: 20px;
+    box-sizing: border-box;
+    border:5px solid black;
+    border-radius: 10px;
+    outline: none;
+    background: white;
+    color:black;
+}
+
+
+.text-area:focus {
+    color: #00000f;
+}
+
+
+.controls__button {
+    padding: 8px 14px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: black;
+    color: #fff;
+    font-weight: bold;
+}
+
+.controls__button:active {
+    background: #00000f;
+}
